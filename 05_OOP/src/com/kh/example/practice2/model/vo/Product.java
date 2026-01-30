@@ -10,7 +10,7 @@ public class Product {
 			System.out.println(pName);
 			System.out.println(price);
 			System.out.println(brand);
-
+			
 		}
 }
 
