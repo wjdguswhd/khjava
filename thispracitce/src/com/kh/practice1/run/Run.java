@@ -1,6 +1,6 @@
 package com.kh.practice1.run;
 
-import com.kh.practice1.func.OperatorPractice1;
+import com.kh.practice1.func.ControlPractice1.ControlPractice1;
 
 public class Run {
 	public static void main(String[] args) {
@@ -17,9 +17,10 @@ public class Run {
 		//VariablePractice4 vp4 = new VariablePractice4();
 		//vp4.eng();
 		
-		OperatorPractice1 op = new OperatorPractice1();
-	    op.method7();
-		
+		//OperatorPractice1 op = new OperatorPractice1();
+	   // op.method10();
+		ControlPractice1 cp = new ControlPractice1();
+		cp.method2();
 	}
 
 }

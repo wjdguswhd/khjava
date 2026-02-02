@@ -113,6 +113,47 @@ public class OperatorPractice1 {
 		}
 		
 	}
+	public void method8() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("주민번호를 입력하세요(- 포함):");
+		String str = sc.nextLine();
+		char ch = str.charAt(7);
+		if(ch=='1'||ch=='3') {
+			System.out.println("남자");
+		}else {
+			System.out.println("여자");
+		}
+	}
+	public void method9() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수1:");
+		int a = sc.nextInt();
+		System.out.print("정수2:");
+		int b = sc.nextInt();
+		System.out.println("입력:");
+		int c = sc.nextInt();
+		
+		if(c<=a || c>b) {
+			System.out.println("true");
+		}else {
+			System.out.println("false");
+		}
+	}
+	public void method10(){
+		Scanner sc = new Scanner(System.in);
+		System.out.print("입력1:");
+		int a = sc.nextInt();
+		System.out.print("입력2:");
+		int b = sc.nextInt();
+		System.out.println("입력3:");
+		int c = sc.nextInt();
+		
+		if(a==b && b==c) {
+			System.out.println("true");
+		}else {
+			System.out.println("false");
+		}
+	}
 	
 	
 }
