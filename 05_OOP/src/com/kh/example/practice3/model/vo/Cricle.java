@@ -1,4 +1,4 @@
-package com.kh.example.practic3.model.vo;
+package com.kh.example.practice3.model.vo;
 
 public class Cricle {
 	public static final double PI=3.14;

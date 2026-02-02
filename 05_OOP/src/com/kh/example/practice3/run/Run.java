@@ -1,6 +1,6 @@
-package com.kh.example.practic3.run;
+package com.kh.example.practice3.run;
 
-import com.kh.example.practic3.model.vo.Cricle;
+import com.kh.example.practice3.model.vo.Cricle;
 
 public class Run {
 	public static void main(String[] args) {
