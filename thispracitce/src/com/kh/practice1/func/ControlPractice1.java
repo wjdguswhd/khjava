@@ -1,4 +1,4 @@
-package com.kh.practice1.func.ControlPractice1;
+package com.kh.practice1.func;
 
 import java.util.Scanner;
 
@@ -51,11 +51,25 @@ public class ControlPractice1 {
 		double evr = (kor+mat+eng)/3;
 		
 		if(kor>=40 && mat>=40 && eng>=40 && evr>=60) {
-			System.err.printf("국어:%");
+			System.out.println("국어점수 :"+kor+"\n수학점수 :"+mat+"\n영어점수 :"+eng+
+					"\n합계:"+sum+"\n평균:"+evr+"\n축하합니다. 합격입니다.");
 		}else {
-			System.out.println("불합격입니다.");
+			System.out.println("국어점수:"+kor+"\n수학점수:"+mat+"\n영어점수:"+eng+"\n불합격입니다.");
 		}
 
+	}
+	public void method4() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("1~12사이의 정수 입력:");
+		int a = sc.nextInt();
+		
+		switch(a){
+		case 1:case 2:case 12: System.out.printf("%d는 겨울입니다",a);break;
+		case 3:case 4:case 5: System.out.printf("%d는 봄입니다",a);break;
+		case 6:case 7:case 8: System.out.printf("%d는 여름입니다",a);break;
+		case 9:case 10:case 11: System.out.printf("%d는 가을입니다",a);break;
+		default: System.out.printf("%d는 없는계절입니다",a);
+		}
 	}
 	
 	
