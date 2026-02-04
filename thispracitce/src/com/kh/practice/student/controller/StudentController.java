@@ -3,7 +3,7 @@ package com.kh.practice.student.controller;
 import com.kh.practice.student.model.vo.Student;
 
 public class StudentController {
-	private static final int CUT_LINE = 60;
+	public static final int CUT_LINE = 60;
 	
 	private Student[] sArr = new Student[5];
 	
@@ -17,18 +17,23 @@ public class StudentController {
 
 	}
 	
-	public void printStudent() {
+	public Student[] printStudent() {
+		return sArr;
+	}
+	
+	public int sumScore() {
+		int sum=0;
 		for(int i=0;i<sArr.length;i++) {
-			System.out.println(sArr[i]);
+			sum += sArr[i].getScore();
 		}
+		return sum;
 	}
 	
-	public int sumScore(int score) {
+	public double[] avgScore() {
+		double[] sumAvg = new double[2];
+		sumAvg[0] = sumScore();
+		sumAvg[1] = sumScore()/sArr.length;
 		
-		return score;
-	}
-	
-	public void avgScore(double[] bCrr1) {
-		Student[] bCrr11 = new Student[2];
+		return sumAvg;
 	}
 }

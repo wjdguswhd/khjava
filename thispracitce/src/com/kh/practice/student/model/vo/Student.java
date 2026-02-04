@@ -5,6 +5,7 @@ public class Student {
 	private String subject;
 	private int score;
 	
+	
 	public Student() {
 		
 	}
@@ -31,5 +32,9 @@ public class Student {
 	}
 	public int getScore() {
 		return score;
+	}
+	
+	public String inform() {
+		return name + subject + score;
 	}
 }
