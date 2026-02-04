@@ -27,8 +27,14 @@ public class Dog extends Animal {
 		return hair;
 	}
 	
+//	@Override
+//	public String inform() {
+//		return super.inform()+ " " + height + " " +hair;
+//	}
+	
 	@Override
-	public String inform() {
-		return super.inform()+ " " + height + " " +hair;
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString() + " " + height + " " + hair;
 	}
 }

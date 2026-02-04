@@ -20,8 +20,8 @@ public class Snake extends Animal{
 	}
 	
 	@Override
-	public String inform() {
-		return super.inform()+ " " + pattern;
+	public String toString() {
+		return super.toString() + " " + pattern;
 	}
 	
 	
