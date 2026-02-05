@@ -1,15 +1,23 @@
 package com.kh;
 
 public class Test {
-	public static void main(String[] args) {
-		System.out.println("Hello world");
-	}
 	
-}
+		public void practice() {
+			int num= 20;
+			
+			String result = "";
+			
+			switch(num) {
+			case 10:result += "a";			
+			case 20:result += "b";
+			case 30:result += "c";
+			case 40:result += "d";break;
+			case 50:result += "e";break;
+			default: result += "f";
 
-//모든 클래스는 하나 이상의 패키지에 포함되도록 권장함
-	//한 줄 주석
-	//주석(comment) = 메모 : 컴파일이 되지 않음.
-	/* 여러줄의
-	 * 주석이가능함
-	 */
+			}
+			System.out.println(result);
+		}
+}
+	
+

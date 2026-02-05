@@ -36,7 +36,6 @@ public class Animal {
 //		return name + " " + age +" " + weight;
 //	}
 	
-	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return name + " " + age +" " + weight;
