@@ -8,7 +8,7 @@ public class Run {
 		//sc.method3();
 		
 		DateController dc = new DateController(); 
-		dc.method1();
+		dc.method2();
 		
 	}
 }
