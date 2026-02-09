@@ -20,7 +20,7 @@ public class Run {
 		//OperatorPractice1 op = new OperatorPractice1();
 	   // op.method10();
 		ControlPractice1 cp = new ControlPractice1();
-		cp.method4();
+		cp.method5();
 	}
 
 }

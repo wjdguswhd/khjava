@@ -71,6 +71,26 @@ public class ControlPractice1 {
 		default: System.out.printf("%d는 없는계절입니다",a);
 		}
 	}
+	public void method5() {
+		String id = "myId";
+		String password = "myPassword12";
+		Scanner sc = new Scanner(System.in);
+		System.out.print("아이디:");
+		String str1 = sc.nextLine();
+		System.out.print("비밀번호:");
+		String str2 = sc.nextLine();
+
+		if(str1.equals(id) && str2.equals(password)) {
+			System.out.println("로그인 성공");
+		}else if(str1.equals(id) ) {
+			System.out.println("비밀번호가 틀렸습니다");
+		}else if(str2.equals(password)) {
+			System.out.println("아이디가 틀렸습니다");
+		}else {
+			System.out.println("다시입력");
+		}
+
+	}
 	
 	
 }
