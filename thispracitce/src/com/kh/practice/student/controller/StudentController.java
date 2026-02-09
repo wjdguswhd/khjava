@@ -3,10 +3,10 @@ package com.kh.practice.student.controller;
 import com.kh.practice.student.model.vo.Student;
 
 public class StudentController {
-	public static final int CUT_LINE = 60;
 	
 	private Student[] sArr = new Student[5];
-	
+	public static final int CUT_LINE = 60;
+
 	public StudentController() {
 		
 		sArr[0] = new Student("김길동","자바",100);

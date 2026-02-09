@@ -20,7 +20,7 @@ public class StudentMenu {
 	System.out.print("학생 점수 합계");
 	System.out.println((int)result[0]);
 	System.out.println("학생 점수 평균");
-	System.err.println(result[1]);
+	System.out.println(result[1]);
 	
 	System.out.println();
 	
