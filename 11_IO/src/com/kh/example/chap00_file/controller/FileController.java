@@ -1,4 +1,4 @@
-package com.kh.example.chp00_file.controller;
+package com.kh.example.chap00_file.controller;
 
 import java.io.File;
 import java.io.IOException;
