@@ -2,7 +2,7 @@ package com.kh.example.list.model.vo;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
 	private String name;
 	private int score;
 	
@@ -89,9 +89,24 @@ public class Student {
 	public int hashCode() {
 		return Objects.hash(name,score);
 	}
+
+	@Override
+	public int compareTo(Student o) {
+		// 점수 내림차순
+		// 비교 주체(this), 비교 대상(o)
+		// 내림차순일 때,
+		// 비교 주체가 비교 대상보다 크면 음수
+		// 비교 주체가 비교 대상보다 작으면 양수
+		// 비교 주체와 비교 대상이 같으면 0을 반환
+//		if(score > o.score) {
+//			return -1;
+//		}else if(score < o.score) {
+//			return 1;
+//		}else {
+//			return 0;
+//		}
+		return -((Integer)score).compareTo(o.score);
 	
-	
-	
-	
+	}
 	
 }
